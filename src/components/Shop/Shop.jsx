@@ -9,7 +9,7 @@ const Shop = () => {
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
-            .then(data => setProducts(data))
+            .then(data => console.log(data))
     }, []);
 
     const handleAddToCart = (product) => {
